@@ -1,0 +1,122 @@
+@use '../partials' as * ;
+.footer{
+    padding: 50px 0;
+    background: $creamyred;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .footer__title{
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $darkblue;
+    }
+
+}
+
+.footer__logo{
+
+    img{
+        width: 30%;
+        margin-bottom: 5px;
+    }
+
+    h5{
+        font-weight: 500;
+        font-size: 1rem;    
+    }
+
+    p{
+        font-size: 0.9rem;
+        color: #333;
+        line-height: 28px;
+    }
+}
+
+.delivery__time-list{
+
+    background-color: transparent;
+
+    .delivery__time-item{
+        background: transparent;
+
+        span{
+            font-weight: 600;
+            font-size: 1rem;
+            color: $darkblue;
+        }
+
+        P{
+            color: $darkblue;            
+        }
+    }
+}
+
+.newsletter{
+
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $darkblue;
+    border-radius: 5px;
+    cursor:pointer;
+    background: #fff;
+
+    input{
+
+        background: transparent;
+        border: none;
+        outline: none;
+        width:70%;
+
+
+        &:focus{
+            outline:none;
+        }
+
+        &::placeholder{
+            color: $darkblue;
+            font-size: 14px;
+        }
+    }
+
+    span{
+        background: $lightred;
+        padding: 7px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-left:-40px;
+        display: inline-block;
+
+        i{
+            color: #fff;
+        }
+    }
+}
+
+
+.social__links{
+
+    span{
+
+        i{
+            padding: 5px;
+            border-radius: 50%;
+            color: #fff;
+            background: $darkblue   ;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+}
+
+.copyright__text{
+    font-size: 0.8rem;
+    color: $lightred;
+}

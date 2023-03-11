@@ -1,0 +1,165 @@
+@use '../partials' as *;
+
+.header__shrink{
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+
+    @include breakpoint (tablet){
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+    .logo{
+        text-align: center;
+        
+        h5{
+            font-weight: 600;
+            font-size: 1rem;
+            color: $darkblue;
+            margin-top: -10px;
+            margin-bottom: 0;
+
+            @include breakpoint(medium){
+                font-size: .9rem;
+                margin-top: -15px ;
+            }
+
+            @include breakpoint(tablet){
+                margin-top: 0 ;
+            }
+
+        }
+        
+        img{
+            width: calc(100% - 60%);
+            object-fit: contain;
+
+            @include breakpoint(medium){
+                width: 30%;
+            }
+        }
+    }
+
+    .navigation{
+        @include breakpoint(medium){
+            
+    
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: rgba(0,0,0,0.425);
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+            display: none;            
+        }
+
+        
+        .menu { 
+            
+            @include breakpoint(medium){
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 250px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                justify-content: center;
+                align-items: center;
+                z-index: 100;
+                line-height: 20px;
+
+            }
+            
+                 a{
+                         font-weight: 600;
+                         font-size: 1rem;
+                         color: $darkblue;
+                         text-decoration: none;
+                         transition:  all 0.3s;
+                        
+                         @include breakpoint(medium){
+                            font-size: 0.9rem;
+                         }
+                         
+
+                    &:hover{
+                             color: $lightred;
+                            }
+                            
+                        }
+                    
+                }
+                
+    }
+
+    .nav__right{
+
+        .cart__icon,.user__icon,.mobile__menu{
+            
+            i{
+                font-size: 1.3rem;
+                color: $darkblue;
+                cursor: pointer;
+
+                @include breakpoint(medium){
+                    font-size: 1rem;
+                }
+            }
+            
+        }
+
+        .cart__icon{
+            position: relative;
+            
+
+            .cart__badge{
+                position: absolute;
+                top: 23px;
+                right: -8px;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                color: #fff;
+                background: $lightred;
+                font-size: .8rem;   
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .mobile__menu{
+            font-weight: 600;
+            display: none;
+
+            @include breakpoint (medium){
+                display: block;
+            }
+        }
+    }
+
+                
+                
+}
+
+.active__menu{
+    color: $lightred !important;
+}
+
+.show__menu{
+    display: block !important;
+}

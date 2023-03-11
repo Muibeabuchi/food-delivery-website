@@ -1,0 +1,121 @@
+@use '../partials' as * ;
+
+
+.hero__content{
+
+    padding-top: 70px;
+
+    // @include breakpoint(small){
+    //     text-align: center;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+
+
+    // h5{
+    //     // @include breakpoint(tablet){
+    //     //     font-size: 1rem;
+    //     // }
+    // }
+
+    p{
+        font-size: 1rem;
+        line-height: 30px;
+        color: #777;
+
+        // @include breakpoint(tablet){
+        //     font-size: 0.8rem;
+        //     line-height: 25px;
+        // }
+
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+        line-height: 55px;
+
+        // @include breakpoint(tablet){
+        //     font-size: 1.5rem;
+        //     line-height: 40px;
+        // }
+        
+        span{
+            color: $lightred;
+        }
+    }
+
+
+    .hero__btns{
+
+        // @include breakpoint(small){
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+
+
+
+
+        button{
+            outline: none;
+            border: none;
+            padding: 7px 20px;
+            border-radius: 5px;
+
+            // @include breakpoint(tablet){
+            //     padding: 5px 15px;
+            //     font-size: 0.7rem;
+            // }
+    
+
+        }
+            
+        .order__btn{
+            background: $lightred;
+            color: #fff;
+            transition: 0.3s;
+
+            &:hover{
+                background: $darkblue;
+            }
+        }
+
+        .all__meals-button{
+            background: transparent;
+            border: 1px solid $lightred;
+
+            a{
+                color: $lightred;
+            }
+        }
+            
+    }
+
+    .hero__service{
+
+        // @include breakpoint(small){
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+
+        p{
+            color: $darkblue;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .shipping__icon{
+
+            i{
+                padding: 5px;
+                border-radius: 50%;
+                background: $lightred;
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+    }
+}
+

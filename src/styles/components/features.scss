@@ -1,0 +1,110 @@
+@use '../partials' as * ;
+
+.feature__subtitle{
+    color: $lightred;
+}
+
+.feature__title{
+    span{
+        color: $lightred;
+    }
+}
+
+.feature__text{
+    color: #777;
+}
+
+.feature__item{
+    p{
+        color: #777;
+    }
+}
+
+.food__category{
+    background: $lightred;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-radius: 8px;
+
+
+    button{
+        outline: none;
+        border: none;
+        padding: 7px 20px;
+        background: transparent;
+        // border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+
+        
+
+        img{
+            width: 30px;
+        }
+
+    }
+
+
+}
+
+.foodBtnActive{
+    background: #fff !important;
+    color: $lightred !important;
+    border-radius: 5px;
+    
+}
+
+.why__tasty-treat{
+    .tasty__treat-title{
+
+        span{
+            color: $lightred;
+        }
+    }
+    p{
+        color: #777;
+        line-height: 28px;
+    }
+
+}
+
+
+.choose__us-title{
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 10px;
+
+    i{
+        color: $lightred;
+        font-weight: 500;
+    }
+}
+
+.choose__us-desc{
+    color: #777;
+}
+
+
+.testimonial__content{
+    p{
+        color: #777;
+        line-height: 30px;
+    }
+
+    h2{
+        color: $darkblue;
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+
+        span{
+            color: $lightred;
+        }
+    }
+    .testimonial__header{
+        color: $lightred;
+        margin-bottom: 30px;
+}
+}

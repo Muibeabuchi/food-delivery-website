@@ -1,0 +1,14 @@
+
+
+$breakpoints-down:(
+    'small':576px,
+    'tablet': 768px,
+    'medium': 992px,
+    'xl':1050px,
+);
+
+@mixin breakpoint($size){
+    @media (max-width:map-get($breakpoints-down,$size)){
+        @content;
+    }
+}
