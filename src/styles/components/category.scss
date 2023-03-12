@@ -6,13 +6,44 @@
     border-radius: 5px;
     cursor: pointer;
     transition: .4s;
+    display: grid;
+    place-content: center;
+    // column-gap: 20px;
+
+    @include breakpoint (tablet){
+        padding: 20px 15px;            
+    }
+
 
     // @include breakpoint (tablet){
     //     margin: 5px 0 ;
     // }
+        .category__image{
+
+            img{
+                @include breakpoint (small){
+                    width: 40px;
+                    width: 40px;
+                }
+            
+            }
+        }
+
 
     &:hover{
         transform: translateY(15px);
+
+        @include breakpoint (tablet){
+            transform: translateY(5px);            
+        }
+
+    }
+
+    h6{
+
+        @include breakpoint (small){
+            font-size: 0.7rem;            
+        }
     }
 }
 

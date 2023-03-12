@@ -4,7 +4,7 @@ $breakpoints-down:(
     'small':576px,
     'tablet': 768px,
     'medium': 992px,
-    'xl':1050px,
+    'xl':1200px,
 );
 
 @mixin breakpoint($size){

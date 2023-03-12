@@ -2,6 +2,11 @@
 
 .feature__subtitle{
     color: $lightred;
+
+    @include breakpoint (tablet){
+        font-size: 1rem;               
+    }
+
 }
 
 .feature__title{
@@ -12,11 +17,32 @@
 
 .feature__text{
     color: #777;
+
+    @include breakpoint (tablet){
+        font-size: 0.8rem;            
+        margin-bottom: 0;
+    }
+
 }
 
 .feature__item{
+
+    h5{
+
+        @include breakpoint (tablet){
+            font-size: 0.9rem;            
+        }
+    }
+
     p{
         color: #777;
+
+        @include breakpoint (tablet){
+            font-size: 0.8rem;            
+            margin-bottom: 0;
+        }
+
+
     }
 }
 
@@ -26,6 +52,24 @@
     margin-top: 30px;
     padding: 20px 0;
     border-radius: 8px;
+    // row-gap: ;
+
+    @include breakpoint(small){
+        // font-size: 0.7rem;                
+        // overflow-x: scroll;
+
+    }
+
+
+    @include breakpoint(tablet){
+        padding: 15px;                
+        // overflow-x: scroll ;
+        // row-gap: 0px;
+
+    }
+
+
+
 
 
     button{
@@ -39,10 +83,22 @@
         gap: 8px;
         color: #fff;
 
+        @include breakpoint (tablet){
+            padding: 5px 15px;            
+            font-size: 0.7rem;
+        }
+
+
         
 
         img{
             width: 30px;
+
+            @include breakpoint(small){
+                // font-size: 0.7rem;                
+                width: 20px;                
+            }
+        
         }
 
     }
@@ -64,9 +120,15 @@
             color: $lightred;
         }
     }
-    p{
+    &>p{
         color: #777;
         line-height: 28px;
+
+        @include breakpoint(tablet){
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+    
     }
 
 }
@@ -77,6 +139,12 @@
     color: #777;
     margin-bottom: 10px;
 
+    @include breakpoint(tablet){
+        font-size: 0.8rem ;
+        // color: red !important;
+    }
+
+
     i{
         color: $lightred;
         font-weight: 500;
@@ -85,6 +153,11 @@
 
 .choose__us-desc{
     color: #777;
+
+    @include breakpoint(tablet){
+        font-size: 0.7rem;
+    } 
+
 }
 
 
@@ -107,4 +180,12 @@
         color: $lightred;
         margin-bottom: 30px;
 }
+}
+
+.why__chose-us{
+
+    @include breakpoint(small){
+        padding-top: 0 ;
+    }
+
 }

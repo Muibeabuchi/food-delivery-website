@@ -27,13 +27,31 @@
 
 .product__content{
 
+    // @include breakpoint(tablet){
+    //     overflow-x: scroll;                
+        
+    // }
+
+
     h5{
         margin-bottom: 20px;
-
+        // font-size: 0.6rem;
+        
         a{
             color: $darkblue;
-            font-size: 1.1rem;
+            font-size: .8rem;
             line-height: 1.1;
+
+            @include breakpoint(tablet){
+                font-size: 0.7rem;                
+            }
+
+            @include breakpoint(xl){
+                font-size: .5rem    ;
+            }
+
+
+
         }
     }
 }
@@ -43,6 +61,11 @@
     font-weight: 600;
     font-size: 1.2rem;
     color: $lightred;
+
+    @include breakpoint(xl){
+        font-size: 0.9rem;
+    }
+
 }
 
 .addToCart__button{
@@ -55,6 +78,20 @@
     background: $lightred;
     font-size: 0.9rem;
     transition: .6s;
+
+
+    @include breakpoint(tablet){
+        padding: 5px 15px;                
+        font-size: 0.8rem;
+    }
+
+    
+
+    @include breakpoint(xl){
+        font-size: 0.6rem;
+    }
+
+
 
     &:hover{
         color: $creamyred;

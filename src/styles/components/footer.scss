@@ -9,6 +9,11 @@
         font-weight: 600;
         font-size: 1.1rem;
         color: $darkblue;
+
+        @include breakpoint(tablet){
+            font-size: 0.8rem;
+        }
+
     }
 
 }
@@ -43,10 +48,21 @@
             font-weight: 600;
             font-size: 1rem;
             color: $darkblue;
+
+            @include breakpoint(tablet){
+                font-size: 0.8rem;
+            }
+    
         }
 
         P{
             color: $darkblue;            
+
+            @include breakpoint(tablet){
+                font-size: 0.7rem;
+                margin-bottom: 0;
+            }
+    
         }
     }
 }
@@ -70,6 +86,11 @@
         outline: none;
         width:70%;
 
+        @include breakpoint(medium){
+            padding: 10px 7px;
+        }
+
+
 
         &:focus{
             outline:none;
@@ -83,13 +104,19 @@
 
     span{
         background: $lightred;
-        padding: 7px 10px;
+        padding: 7px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 5px;
         margin-left:-40px;
         display: inline-block;
+        // font-size: 0.7rem;
+
+        @include breakpoint(medium){
+            font-size: 0.7rem;
+        }
+
 
         i{
             color: #fff;
@@ -100,7 +127,25 @@
 
 .social__links{
 
+    @include breakpoint(small){
+        justify-content: center !important;
+    }
+
+
     span{
+
+        @include breakpoint(tablet){
+            padding: 4px;
+        }
+
+
+        a{
+
+            @include breakpoint(tablet){
+                font-size: 0.7rem;
+            }
+    
+        }
 
         i{
             padding: 5px;
@@ -119,4 +164,9 @@
 .copyright__text{
     font-size: 0.8rem;
     color: $lightred;
+
+    @include breakpoint(tablet){
+        text-align: center;
+    }
+
 }

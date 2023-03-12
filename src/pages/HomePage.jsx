@@ -58,9 +58,9 @@ const HomePage = () => {
                     <button className="all__meals-button" ><Link to='/foods'>See all foods</Link></button>
                   </div>
 
-                  <div className="d-flex align-items-center gap-5 mt-5 hero__service">
-                    <p className="gap-4 d-flex align-items-center "><span className="shipping__icon"><i className="ri-car-line"></i></span>No Shopping Charge</p>
-                    <p className="gap-4 d-flex align-items-center "><span className="shipping__icon"><i className="ri-shield-check-line"></i></span>100% secure checkout</p>
+                  <div className="d-flex align-items-center gap-4 mt-5 hero__service">
+                    <p className=" d-flex align-items-center "><span className="shipping__icon"><i className="ri-car-line"></i></span>No Shopping Charge</p>
+                    <p className=" d-flex align-items-center "><span className="shipping__icon"><i className="ri-shield-check-line"></i></span>100% secure checkout</p>
                   </div>
                 </div>
               </Col>
@@ -87,13 +87,16 @@ const HomePage = () => {
                 <h2 className="feature__title">We will <span>take care of</span></h2>
                 <p className="mt-4 mb-1 feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, similique.</p>
                 <p className="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, similique.</p>
+
+              <Feature />
               </Col>
             </Row>
-            <Row>
-              <Feature />
-            </Row>
+            {/* <Row>
+            </Row> */}
           </Container>
         </section>
+
+
 
         <section >
           <Container>
@@ -121,7 +124,7 @@ const HomePage = () => {
 
               {
                 checkCategory().map((product)=>{
-                  return <Col lg='3' md='4' key={product.id} className='mt-5' >
+                  return <Col lg='3' md='4'  sm='6' xs='12' key={product.id} className='mt-5' >
                     <ProductCard {...product}/>
                   </Col>
                 })
@@ -131,7 +134,7 @@ const HomePage = () => {
           </Container>
         </section>
 
-        <section>
+        <section className="why__chose-us">
           <Container>
             <Row>
               <Col className="" lg='6' md='6'>
@@ -142,7 +145,7 @@ const HomePage = () => {
                   <h2 className="tasty__treat-title mb-4">Why <span>Tasty Treat?</span></h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure pariatur, temporibus, quibusdam dignissimos ab facere a in sed sapiente praesentium neque rem aspernatur error odit est labore veniam ratione!</p>
 
-                  <ListGroup flush  className="mt-5">
+                  <ListGroup flush  className="mt-4">
                     <ListGroupItem className="border-0 ps-0">
                       <p className="choose__us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i>Fresh and tasty foods</p>
                       <p className="choose__us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, voluptate.</p>
@@ -170,7 +173,7 @@ const HomePage = () => {
               </Col>
               {
                 pizzaProducts.map((pizza)=>( 
-                  <Col lg='3' key={pizza.id}>
+                  <Col lg='3' md='4' xs='12' key={pizza.id}>
                       <ProductCard {...pizza}/>
                   </Col>
 
@@ -188,14 +191,17 @@ const HomePage = () => {
                   <h5 className="testimonial__header">Testimonial</h5>
                   <h2>What our <span>Customers</span> are saying</h2>
                   <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ratione tempore consequuntur fugiat sunt quia voluptates similique natus?</p>
-
-                  <TestimonialSwiper/>
                 </div>
               </Col>
 
               <Col lg='6' md='6'>
 
                 <img src={testimonialImg} alt="testimonial-image" className="w-100" />
+              </Col>
+            </Row>
+            <Row>
+              <Col lg='12' md='12' sm='12' >
+                  <TestimonialSwiper/>
               </Col>
             </Row>
           </Container>

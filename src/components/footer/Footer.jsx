@@ -7,7 +7,7 @@ import '../../styles/components/footer.scss'
 const Footer = () => {
 
   const year = new Date().getFullYear()
-  console.log(year);
+  // console.log(year);
 
   const Strong =({children}) => <strong>{children}</strong>
   return (

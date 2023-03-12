@@ -6,11 +6,35 @@
     height: 50px;
     border-radius: 10px;
     object-fit: cover;
+
+    @include breakpoint(tablet){
+
+        width: 80px;
+        height: 80px;
+    }
+
 }
 .review__text{
         color: #777;
         line-height: 30px;
         margin: 40px 0px;
+
+        @include breakpoint(tablet){
+            font-size: 0.8rem;
+            margin: 20px 0;
+        }
+
 }
 
 
+.slider__content{
+
+    h6{
+
+
+        @include breakpoint(tablet){
+            font-size: 0.8rem;
+        }
+
+    }
+}

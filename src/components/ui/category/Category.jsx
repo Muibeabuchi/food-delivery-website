@@ -10,9 +10,9 @@ const Category = () => {
         <Row>
             {
                 categoryData.map((item,index)=>(
-                    <Col lg='3' md='4'  key={index}>
-                        <div className="category__item d-flex align-items-center gap-3">
-                            <div className="category image">
+                    <Col className='mb-3' lg='3' md='6' sm='6' xs='6' key={index}>
+                        <div className="category__item  d-flex align-items-center gap-3">
+                            <div className="category__image">
                                 <img src={item.immageUrl} alt={item.display}  />
                             </div>
                             <h6>{item.display}</h6>

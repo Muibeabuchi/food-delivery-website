@@ -5,29 +5,29 @@
 
     padding-top: 70px;
 
-    // @include breakpoint(small){
-    //     text-align: center;
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
+    @include breakpoint(tablet){
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
-    // h5{
-    //     // @include breakpoint(tablet){
-    //     //     font-size: 1rem;
-    //     // }
-    // }
+    h5{
+        @include breakpoint(tablet){
+            font-size: 1rem;
+        }
+    }
 
     p{
         font-size: 1rem;
         line-height: 30px;
         color: #777;
 
-        // @include breakpoint(tablet){
-        //     font-size: 0.8rem;
-        //     line-height: 25px;
-        // }
+        @include breakpoint(tablet){
+            font-size: 0.8rem;
+            line-height: 25px;
+        }
 
     }
 
@@ -35,10 +35,10 @@
         font-size: 2.5rem;
         line-height: 55px;
 
-        // @include breakpoint(tablet){
-        //     font-size: 1.5rem;
-        //     line-height: 40px;
-        // }
+        @include breakpoint(tablet){
+            font-size: 1.5rem;
+            line-height: 40px;
+        }
         
         span{
             color: $lightred;
@@ -48,10 +48,10 @@
 
     .hero__btns{
 
-        // @include breakpoint(small){
-        //     display: flex;
-        //     justify-content: center;
-        // }
+        @include breakpoint(small){
+            display: flex;
+            justify-content: center;
+        }
 
 
 
@@ -63,10 +63,19 @@
             padding: 7px 20px;
             border-radius: 5px;
 
-            // @include breakpoint(tablet){
-            //     padding: 5px 15px;
-            //     font-size: 0.7rem;
-            // }
+            @include breakpoint(tablet){
+                padding: 5px 15px;
+                font-size: 0.7rem;
+                align-items: center;
+            }
+
+            i{
+
+                @include breakpoint (tablet){
+                    font-size: 0.8rem;                    
+                }
+
+            }
     
 
         }
@@ -94,16 +103,24 @@
 
     .hero__service{
 
-        // @include breakpoint(small){
-        //     display: flex;
-        //     justify-content: center;
-        // }
+        @include breakpoint(small){
+            display: flex;
+            justify-content: center;
+            // gap: 10px;
+        }
 
 
         p{
             color: $darkblue;
             font-weight: 600;
             font-size: 0.9rem;
+            gap: 20px;
+
+            @include breakpoint (medium){
+                font-size: 0.7rem;
+                line-height: 1.1;
+                gap: 10px;
+            }
         }
 
         .shipping__icon{
