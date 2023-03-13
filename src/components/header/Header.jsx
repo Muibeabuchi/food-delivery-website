@@ -10,7 +10,9 @@ import {navLinks} from '../../constants';
 
 import {Link,NavLink} from 'react-router-dom';
 
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
+import {openModal} from '../../store/cartModal/CartModalSlice';
 
 
 const Header = () => {
@@ -19,6 +21,9 @@ const Header = () => {
   const headerRef = useRef(null)
   const toggleMenu = () => menuRef.current.classList.toggle('show__menu');
   const totalQuantity = useSelector((state)=> state.cart.totalQuantity)
+  // const isOpen = useSelector((state)=> state.cartModal.isOpen)
+  const dispatch = useDispatch();
+  
 
 
   useEffect(()=>{
@@ -61,7 +66,7 @@ return ()=> window.removeEventListener('scroll', scrollCheck);
           {/* //?========= NAV RIGHT ICONS  */}
           
           <div className="nav__right d-flex align-items-center gap-4">
-            <span className="cart__icon">
+            <span className="cart__icon" onClick={()=>dispatch(openModal())}>
               <i className="ri-shopping-basket-line"></i>
               <span className="cart__badge">{totalQuantity}</span>
             </span>
