@@ -16,7 +16,7 @@ function Cart() {
     const cartProducts = useSelector((state)=> state.cart.cartItems)
     const totalAmount = useSelector((state)=> state.cart.totalAmount)
 
-    console.log(totalAmount);
+    // console.log(totalAmount);
 
   return (
     <div className="cart__container">

@@ -1,0 +1,33 @@
+@use '../partials/' as *;
+
+thead{
+    text-align:center;
+}
+
+.table__image{
+    width: 50px;
+    width: 50px;
+}
+
+.cart__item-del{
+    cursor: pointer;
+    font-size: 1.1rem;
+
+
+}
+
+// .cart__item-delete{
+//     &:hover{
+//     background: $lightred;
+//     }
+    
+// }
+
+.links{
+    color: #fff;
+}
+
+.cart__subtotal-btn span {
+    color: $lightred;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,58 @@
+@use '../partials' as *;
+
+
+.form{
+    width: 40%;
+    margin: auto;
+    background: $creamyred;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+    @include breakpoint(tablet){
+        width: 100%;            
+        margin-top: 50px;
+    }
+
+    .form__group{
+
+    background: $creamyred;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+
+    input{
+        background: transparent;
+        margin-bottom: 1rem;
+        padding: 7px 20px;
+        border:none;
+        border-bottom: 1px solid #777;
+        width: 100%;
+        font-size: .8rem;
+
+        &::placeholder{
+            font-size: 0.7rem;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+
+}
+}
+
+.register__link{
+    color: $darkblue;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: .9rem;
+
+    &:hover{
+        // text-decoration: underline;
+        color:      $lightred;
+    }
+
+    // @include breakpoint()
+}

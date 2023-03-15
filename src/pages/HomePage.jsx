@@ -38,7 +38,7 @@ const HomePage = () => {
 
   function handleCategory(arg){
     setCategory(arg)
-    console.log(category);
+    // console.log(category);
   }
 
   return (
@@ -124,7 +124,7 @@ const HomePage = () => {
 
               {
                 checkCategory().map((product)=>{
-                  return <Col lg='3' md='4'  sm='6' xs='12' key={product.id} className='mt-5' >
+                  return <Col lg='3' md='4'  sm='6' xs='6' key={product.id} className='mt-5' >
                     <ProductCard {...product}/>
                   </Col>
                 })
@@ -173,7 +173,7 @@ const HomePage = () => {
               </Col>
               {
                 pizzaProducts.map((pizza)=>( 
-                  <Col lg='3' md='4' xs='12' key={pizza.id}>
+                  <Col lg='3' md='4' xs='6' className="mb-2" key={pizza.id}>
                       <ProductCard {...pizza}/>
                   </Col>
 

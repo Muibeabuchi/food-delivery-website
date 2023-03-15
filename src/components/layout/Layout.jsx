@@ -8,12 +8,12 @@ const Layout = () => {
 
   const isOpen = useSelector((state)=>state.cartModal.isOpen)
   return (
-    <div>
+    <>
         <Header />
         { isOpen && <Cart/>} 
         <Outlet />
         <Footer />
-    </div>
+    </>
   )
 }
 

@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html{
+  min-height: fit-content;
+}
+
 // html{
 //   // width: 100vw;
 //   overflow-x: hidden;
@@ -27,6 +31,7 @@ body {
   background: #fcfcfc;
   font-family: 'Poppins', sans-serif !important;
   // overflow-x: hidden;
+  min-height: 100vh;
 }
 
 h1,

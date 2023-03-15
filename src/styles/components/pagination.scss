@@ -1,0 +1,29 @@
+@use '../partials/' as *;
+
+.pagination__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    width: 80%;
+    height: 40px;
+    margin:auto;
+    list-style: none;
+    margin-top: 30px;
+
+    a{
+        padding: 7px 13px;
+        background: $darkblue;
+        color: white !important;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 5px;
+
+        &:hover{
+            background: $lightred;
+        }
+    }
+}

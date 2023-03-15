@@ -1,0 +1,46 @@
+@use '../partials/' as *;
+
+.search__widget,.sorting__widget select{
+    padding: 7px 15px;
+    border: 1px solid $creamyred;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    input{
+        border: none;
+
+        @include breakpoint (tablet){
+            font-size: 0.8rem;            
+        }
+
+
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+}
+
+.search__widget{
+
+    width: 50%;
+
+    @include breakpoint (tablet){
+        width: 100%;            
+        margin-bottom: 1rem;
+    }
+
+}
+
+.sorting__widget{
+
+    
+    select{
+
+        @include breakpoint (tablet){
+            width: 100% !important;            
+            font-size: 0.8rem;
+        }
+    }
+}

@@ -85,6 +85,11 @@
         font-size: 0.8rem;
     }
 
+    @include breakpoint (small){
+        font-size: 0.4rem;
+        padding: 2px 7px;
+    }
+
     
 
     @include breakpoint(xl){

@@ -1,0 +1,77 @@
+@use '../partials/' as *;
+
+.form__group{
+    input{
+        background: transparent;
+        margin-bottom: 1rem;
+        padding: 7px 20px;
+        border:none;
+        border-bottom: 1px solid #777;
+        width: 100%;
+        font-size: .8rem;
+
+        &::placeholder{
+            font-size: 0.7rem;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+    textarea{
+        padding-bottom: 10px;
+        background: transparent;
+        border:none;
+        border-bottom: 1px solid #777;
+        padding: 7px 20px;
+        width: 100%;
+        resize: none;
+
+        @include breakpoint(tablet){
+            font-size: 0.8rem;
+        }
+
+        &::placeholder{
+            @include breakpoint(tablet){
+                font-size: 0.7rem;
+            }
+    
+        }
+
+
+        &:focus{
+            outline: none;
+        }
+        
+    }
+}
+
+
+.checkout__bill{
+    background: $creamyred;
+    padding: 30px;
+    border-radius: 8px;
+
+    @include breakpoint(tablet){
+        margin-top: 40px;
+    }
+
+    h6{
+
+        @include breakpoint (tablet){
+            font-size: 0.9rem;        
+        }
+    }
+
+}
+
+.checkout__total{
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+
+    @include breakpoint (tablet){
+
+    }
+}
